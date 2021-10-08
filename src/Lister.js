@@ -1,6 +1,8 @@
 function Lister ({list}) {
     return <section className="Lister">
-        <p>{list.name}</p>
+        <p>{list.map((item) => {
+            return item.name
+        })}</p>
     </section>
 }
 

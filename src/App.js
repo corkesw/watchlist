@@ -6,11 +6,11 @@ import { useState } from "react";
 
 // TV and Film watchlist
 function App() {
-  const [list, SetList] = useState({name:"Bergerac", type:"tv"})
+  const [list, setList] = useState([{name:"Bergerac", type:"tv"}])
   return (
     <div>
       <Header />  
-      <Adder />
+      <Adder setList={setList}/>
       <Lister list={list}/>
     </div>
   );
